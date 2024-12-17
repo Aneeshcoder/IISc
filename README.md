@@ -10,3 +10,4 @@ PhD Coursework Courses:
 3. DS284 - Numerical Linear Algebra
 4. DS288 - Numerical Methods
 5. E0230 - Computational Methods for Optimization
+6. 
