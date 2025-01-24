@@ -9,6 +9,6 @@ PhD Research Training Program (RTP):
 2. DS221 - Introduction to Scalable Systems
 3. DS284 - Numerical Linear Algebra
 4. DS288 - Numerical Methods
-5. E0230 - Computational Methods for Optimization
-6. DS289 - Numerical Solution of Differential Equations
-7. DS295 - Parallel Programming
+5. DS289 - Numerical Solution of Differential Equations
+6. DS295 - Parallel Programming
+7. E0230 - Computational Methods for Optimization
