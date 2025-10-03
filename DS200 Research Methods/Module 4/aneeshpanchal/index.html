@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aneesh Panchal - About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Aneesh Panchal</h1>
+    <nav>
+      <a href="index.html" class="active">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="research.html">Research</a>
+      <a href="awards.html">Awards</a>
+      <a href="internships.html">Internships</a>
+      <a href="Curriculum_Vitae.pdf">Download CV</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p><strong>Pursuing PhD</strong> in Engineering - Computational and Data Science, specializing in <strong>Scientific Machine Learning (SciML)</strong> under <strong>Dr. Ratikanta Behera</strong> at the NATL Laboratory, Department of Computational and Data Sciences, Indian Institute of Science (IISc), Bangalore, IN.</p>
+      <p>Previously <strong>Completed BTech</strong> in <strong>Mathematics and Computing</strong> with a minor in <strong>Industrial Mathematics</strong> (2020-24) from Delhi Technological University (DTU), formerly Delhi College of Engineering (DCE), Delhi, IN.</p>
+      <p>Qualified <strong>GATE 2024</strong> with <strong>All India Rank 58</strong> in Data Science and Artificial Intelligence (Code: DA).</p>
+      <p><strong>Research Interests:</strong> Numerical Methods for ODE/PDE, Physics-Informed Neural Networks, Numerical Linear Algebra, and Wavelet-based Numerical Solutions.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Information</h2>
+      <p>You may reach me at
+      <a href="mailto:aneeshp@iisc.ac.in"><strong>aneeshp@iisc.ac.in</strong></a>
+      </p>
+    </section>
+  </main>
+  <script>
+    // Navigation active state based on scroll (optional)
+    const sections = document.querySelectorAll('main section');
+    const navLinks = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 90;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
